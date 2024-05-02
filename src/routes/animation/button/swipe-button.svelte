@@ -6,34 +6,34 @@
 
 <style>
 	button {
-		--dark-gray: #272727;
-		--yellow: #fff200;
+		--dark-purple: #351435;
 		cursor: pointer;
-		color: var(--dark-gray);
+		color: var(--dark-purple);
 		background-color: transparent;
 		font-family: sans-serif;
 		font-size: 45px;
-		border: 5px solid var(--dark-gray);
+		border: 4px solid var(--dark-purple);
 		padding: 40px 80px;
 		position: relative;
+		transition: all 800ms;
 		overflow: hidden;
 	}
-
 	button::before {
 		content: '';
+		background-color: var(--dark-purple);
 		position: absolute;
-		left: 0;
 		top: 0;
-		background-color: var(--yellow);
-		height: 100%;
+		left: 0;
 		width: 100%;
+		height: 100%;
 		z-index: -1;
-		transform-origin: top left;
-		transform: rotate(90deg);
-		transition: transform 600ms;
+		transform: translateX(-100%);
+		transition: inherit;
 	}
-
+	button:hover {
+		color: white;
+	}
 	button:hover::before {
-		transform: rotate(0) scaleX(2);
+		transform: translate(0);
 	}
 </style>
