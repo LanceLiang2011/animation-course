@@ -7,6 +7,7 @@
 	import GlowingButton from './glowing-button.svelte';
 	import LayerButton from './layer-button.svelte';
 	import ScaleButton from './scale-button.svelte';
+	import CircularSwappingButton from './circular-swapping-button.svelte';
 </script>
 
 <div class="container">
@@ -17,6 +18,7 @@
 	<GlowingButton>Hover Me</GlowingButton>
 	<LayerButton>Hover Me</LayerButton>
 	<ScaleButton>Hover Me</ScaleButton>
+	<CircularSwappingButton>Hover Me</CircularSwappingButton>
 	<StretchButton>Hover Me</StretchButton>
 </div>
 
