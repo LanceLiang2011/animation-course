@@ -5,6 +5,8 @@
 	import StretchButton from './stretch-button.svelte';
 	import SwipeTextButton from './swipe-text-button.svelte';
 	import GlowingButton from './glowing-button.svelte';
+	import LayerButton from './layer-button.svelte';
+	import ScaleButton from './scale-button.svelte';
 </script>
 
 <div class="container">
@@ -13,6 +15,8 @@
 	<CrossButton>Hover Me</CrossButton>
 	<SwipeTextButton>Hover Me</SwipeTextButton>
 	<GlowingButton>Hover Me</GlowingButton>
+	<LayerButton>Hover Me</LayerButton>
+	<ScaleButton>Hover Me</ScaleButton>
 	<StretchButton>Hover Me</StretchButton>
 </div>
 
