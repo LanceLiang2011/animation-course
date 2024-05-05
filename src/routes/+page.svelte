@@ -8,6 +8,10 @@
 	> on Udemy.
 </p>
 <p>You may use Chrome Browser to get a better page transition experience.</p>
+<p>
+	Apologize for not being mobile friendly at this point. Some animations and hover effect make
+	little sense on mobile.
+</p>
 
 <style>
 	p {
