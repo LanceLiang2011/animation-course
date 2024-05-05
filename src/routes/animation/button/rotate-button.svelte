@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let href: string;
+</script>
 
-<button {...$$restProps}>
+<a {...$$restProps} {href}>
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--dark-gray: #272727;
 		--yellow: #fff200;
 		cursor: pointer;
@@ -19,7 +21,7 @@
 		overflow: hidden;
 	}
 
-	button::before {
+	a::before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -33,7 +35,7 @@
 		transition: transform 600ms;
 	}
 
-	button:hover::before {
+	a:hover::before {
 		transform: rotate(0) scaleX(2);
 	}
 </style>

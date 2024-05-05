@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let href: string;
+</script>
 
-<button {...$$restProps}>
+<a {...$$restProps} {href}>
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--dark-purple: #351435;
 		--red: #e1332d;
 		cursor: pointer;
@@ -19,7 +21,7 @@
 		transition: all 600ms;
 		overflow: hidden;
 	}
-	button::before {
+	a::before {
 		content: 'Hello';
 		color: white;
 		display: flex;
@@ -34,7 +36,7 @@
 		transform: translateY(-100%);
 		transition: inherit;
 	}
-	button:hover::before {
+	a:hover::before {
 		transform: translate(0);
 	}
 </style>

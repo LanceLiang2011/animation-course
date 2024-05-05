@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let href: string;
+</script>
 
-<button {...$$restProps}>
+<a {...$$restProps} {href}>
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--dark-gray: #262626;
 		cursor: pointer;
 		color: var(--dark-gray);
@@ -18,11 +20,11 @@
 		transition: all 800ms;
 	}
 
-	button:hover {
+	a:hover {
 		color: white;
 	}
 
-	button::before {
+	a::before {
 		content: '';
 		background-color: var(--dark-gray);
 		position: absolute;
@@ -35,11 +37,11 @@
 		transition: inherit;
 	}
 
-	button:hover::before {
+	a:hover::before {
 		transform: rotateX(0);
 	}
 
-	button::after {
+	a::after {
 		content: '';
 		background-color: var(--dark-gray);
 		position: absolute;
@@ -52,7 +54,7 @@
 		transition: inherit;
 	}
 
-	button:hover::after {
+	a:hover::after {
 		transform: rotateY(0);
 	}
 </style>

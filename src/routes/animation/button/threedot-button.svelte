@@ -1,10 +1,11 @@
 <script lang="ts">
+	export let href: string;
 </script>
 
-<button><span></span><slot /></button>
+<a {href}><span></span><slot /></a>
 
 <style>
-	button {
+	a {
 		width: 330px;
 		height: 120px;
 		color: yellow;
@@ -19,8 +20,8 @@
 		line-height: 120px;
 	}
 
-	button::before,
-	button::after {
+	a::before,
+	a::after {
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -34,24 +35,24 @@
 		opacity: 0;
 	}
 
-	button::before {
+	a::before {
 		left: 0;
 		box-shadow: -100px 0 0 yellow;
 		z-index: -1;
 	}
-	button::after {
+	a::after {
 		right: 0;
 		box-shadow: 100px 0 0 yellow;
 		z-index: -1;
 	}
 
-	button:hover::before {
+	a:hover::before {
 		left: 50%;
 		box-shadow: 30px 0 0 yellow;
 		transform: translate(-50%, -50%);
 		opacity: 1;
 	}
-	button:hover::after {
+	a:hover::after {
 		right: 50%;
 		box-shadow: -30px 0 0 yellow;
 		transform: translate(50%, -50%);
@@ -71,12 +72,12 @@
 		z-index: -1;
 	}
 
-	button:hover {
+	a:hover {
 		color: gray;
 		transition-delay: 400ms;
 	}
 
-	button:hover span {
+	a:hover span {
 		transform: scale(1);
 		transition-delay: 400ms;
 	}

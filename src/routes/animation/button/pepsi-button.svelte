@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let href: string;
+</script>
 
-<button>
+<a {href}>
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--light-blue: #20caff;
 		--light-red: #ff7675;
 		width: 300px;
@@ -24,7 +26,7 @@
 		perspective: 1200px;
 	}
 
-	button::before {
+	a::before {
 		content: '';
 		position: absolute;
 		height: 100%;
@@ -37,7 +39,7 @@
 		transition: transform 400ms;
 	}
 
-	button::after {
+	a::after {
 		content: '';
 		position: absolute;
 		height: 100%;
@@ -49,17 +51,17 @@
 		mix-blend-mode: multiply;
 		transition: transform 400ms;
 	}
-	button:hover {
+	a:hover {
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-image: linear-gradient(45deg, var(--light-blue), var(--light-red));
 	}
 
-	button:hover::before {
+	a:hover::before {
 		transform: rotateX(75deg) translate(3px, -60px);
 	}
-	button:hover::after {
+	a:hover::after {
 		transform: rotateX(-75deg) translate(-3px, 60px);
 	}
 </style>

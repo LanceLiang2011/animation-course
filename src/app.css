@@ -74,3 +74,13 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+a {
+	display: block;
+}
+
+a:active,
+a:visited,
+a:hover {
+	color: initial;
+}

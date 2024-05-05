@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	export let href: string;
 	let data: HTMLSpanElement;
 	let text: string;
 	onMount(() => {
@@ -7,16 +8,17 @@
 	});
 </script>
 
-<button style="--text:'{text}';" {...$$restProps}>
+<a style="--text:'{text}';" {...$$restProps} {href}>
 	<span bind:this={data}>
 		<slot />
 	</span>
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--dark-gray: #262626;
 		--yellow: #fff200;
+		color: #262626;
 		cursor: pointer;
 		background-color: var(--dark-gray);
 		font-family: sans-serif;
@@ -28,7 +30,7 @@
 		transition: transform 0.5s;
 	}
 
-	button::before {
+	a::before {
 		content: var(--text);
 		position: absolute;
 		top: 0;
@@ -41,7 +43,7 @@
 		transition: inherit;
 	}
 
-	button::after {
+	a::after {
 		content: var(--text);
 		position: absolute;
 		top: 0;
@@ -55,11 +57,11 @@
 		transition: inherit;
 	}
 
-	button:hover::before {
+	a:hover::before {
 		transform: translate(100%, -100%);
 	}
 
-	button:hover::after {
+	a:hover::after {
 		transform: translate(0%, 0%);
 	}
 </style>

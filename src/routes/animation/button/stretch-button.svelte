@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let href: string;
+</script>
 
-<button {...$$restProps}>
+<a {...$$restProps} {href}>
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--red: #e1332d;
 		cursor: pointer;
 		color: var(--red);
@@ -20,7 +22,7 @@
 		transition: all 500ms;
 	}
 
-	button:hover {
+	a:hover {
 		font-weight: 900;
 		letter-spacing: 10px;
 		border: 6px solid var(--red);
