@@ -7,3 +7,11 @@
 		>Creative Advanced CSS & JavaScript Animations - 150 Projects</a
 	> on Udemy.
 </p>
+<p>You may use Chrome Browser to get a better page transition experience.</p>
+
+<style>
+	p {
+		font-size: 1.3rem;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+</style>
