@@ -4,6 +4,9 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{data.params.name}</title>
+</svelte:head>
 <div class="container">
 	<svelte:component this={data.component} href="/animation/button">Hover Me</svelte:component>
 	<p>Click button to go back</p>

@@ -14,6 +14,9 @@
 	import PepsiButton from './pepsi-button.svelte';
 </script>
 
+<svelte:head>
+	<title>Button Animation</title>
+</svelte:head>
 <h1>Button Animations</h1>
 <p>Hover to see the animation. Click to see the code.</p>
 <div class="container">

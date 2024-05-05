@@ -24,6 +24,8 @@
 		cursor: pointer;
 		color: wheat;
 		perspective: 1200px;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: pepsi;
 	}
 
 	a::before {

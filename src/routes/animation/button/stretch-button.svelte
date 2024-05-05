@@ -20,6 +20,8 @@
 		border: 3px solid var(--red);
 		padding: 40px 80px;
 		transition: all 500ms;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: stretch;
 	}
 
 	a:hover {

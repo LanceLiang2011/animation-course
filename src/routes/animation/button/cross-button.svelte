@@ -18,6 +18,8 @@
 		padding: 40px 80px;
 		position: relative;
 		transition: all 800ms;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: cross;
 	}
 
 	a:hover {

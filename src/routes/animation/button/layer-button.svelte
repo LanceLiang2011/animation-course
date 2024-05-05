@@ -28,6 +28,8 @@
 		position: relative;
 		overflow: hidden;
 		transition: transform 0.5s;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: layer;
 	}
 
 	a::before {

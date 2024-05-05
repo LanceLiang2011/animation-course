@@ -19,6 +19,8 @@
 		padding: 40px 80px;
 		position: relative;
 		overflow: hidden;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: rotate;
 	}
 
 	a::before {

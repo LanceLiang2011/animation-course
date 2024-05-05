@@ -20,6 +20,8 @@
 		position: relative;
 		transition: all 300ms;
 		overflow: hidden;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: glowing;
 	}
 	a:hover {
 		background-color: var(--red);

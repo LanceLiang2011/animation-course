@@ -29,6 +29,8 @@
 		font-family: sans-serif;
 		cursor: pointer;
 		overflow: hidden;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: dizzy;
 	}
 
 	a::before {

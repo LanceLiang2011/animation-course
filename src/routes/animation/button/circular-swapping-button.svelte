@@ -22,6 +22,8 @@
 		overflow: hidden;
 		display: grid;
 		place-content: center;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: circular-swapping;
 	}
 	a::before {
 		content: '';

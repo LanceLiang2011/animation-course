@@ -18,6 +18,8 @@
 		cursor: pointer;
 		text-align: center;
 		line-height: 120px;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: threedot;
 	}
 
 	a::before,

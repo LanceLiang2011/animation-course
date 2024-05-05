@@ -29,6 +29,8 @@
 			transform 500ms,
 			opacity 500ms;
 		overflow: hidden;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: scale;
 	}
 
 	a::before {

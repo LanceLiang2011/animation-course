@@ -19,6 +19,8 @@
 		position: relative;
 		transition: all 800ms;
 		overflow: hidden;
+		/* This is for view transition. You don't need this in your code */
+		view-transition-name: swipe;
 	}
 	a::before {
 		content: '';
