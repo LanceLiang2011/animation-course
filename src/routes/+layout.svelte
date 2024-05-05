@@ -23,6 +23,9 @@
 <main>
 	<slot />
 </main>
+<footer>
+	Lance Liang &copy; {new Date().getFullYear().toString()} | All rights reserved
+</footer>
 
 <style>
 	ul {
@@ -33,6 +36,13 @@
 	main {
 		max-width: 1440px;
 		margin-inline: auto;
-		margin-top: 24px;
+		margin-top: 36px;
+	}
+	footer {
+		color: gray;
+		font-size: 1.2rem;
+		display: flex;
+		justify-content: center;
+		margin-block: 20px;
 	}
 </style>
