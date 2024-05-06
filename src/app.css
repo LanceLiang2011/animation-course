@@ -83,6 +83,6 @@
 	}
 
 	.paragraph {
-		@apply font-serif text-xl;
+		@apply text-2xl;
 	}
 }
