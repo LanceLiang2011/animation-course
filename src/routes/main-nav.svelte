@@ -3,7 +3,6 @@
 	import { page } from '$app/stores';
 	import { cn } from '$lib/utils.js';
 	$: mainPath = $page.url.pathname.split('/').at(1);
-	$: console.log(mainPath);
 </script>
 
 <Menubar.Root class=" w-fit ml-12">
