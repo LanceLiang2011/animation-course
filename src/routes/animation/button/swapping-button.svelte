@@ -36,7 +36,7 @@
 	a::after {
 		content: '';
 		position: absolute;
-		transition: transform 1500ms;
+		transition: transform 1600ms;
 	}
 
 	a::before {
