@@ -8,7 +8,6 @@
 	export let data: PageData;
 </script>
 
-{$page.url.pathname}
 <div class="container">
 	<nav>
 		<ScrollArea class="w-36 rounded-md border">
