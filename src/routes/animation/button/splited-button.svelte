@@ -49,10 +49,10 @@
 		left: 25%;
 	}
 	a:hover::before {
-		transform: translateX(100%);
+		transform: translateX(100%) scaleX(1.1);
 	}
 	a:hover::after {
-		transform: translateY(100%);
+		transform: translateY(100%) scaleX(1.1);
 	}
 	a > span::before,
 	a > span::after {
@@ -75,7 +75,7 @@
 	}
 
 	a:hover > span::before {
-		transform: translateY(calc(-100% + var(--border-width)));
+		transform: translateY(calc(-100% + var(--border-width))) scaleX(1.1);
 	}
 
 	a:hover > span::after {
