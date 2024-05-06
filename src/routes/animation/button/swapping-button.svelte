@@ -60,6 +60,7 @@
 	a:hover::before {
 		transform: rotateY(180deg);
 		transition: transform 600ms;
+		transition-delay: 200ms;
 	}
 	a:hover::after {
 		transform: rotateX(180deg);
