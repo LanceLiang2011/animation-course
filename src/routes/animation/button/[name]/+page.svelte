@@ -8,16 +8,10 @@
 <svelte:head>
 	<title>{data.params.name}</title>
 </svelte:head>
-<div class="container">
+<div class="grid content-center items-center justify-center justify-items-center">
 	<svelte:component this={data.component} href="/animation/button">Go Back</svelte:component>
 </div>
 <Badge class="ml-4">{data.params.name}.svelte</Badge>
-<Script code={data.code} />
-
-<style>
-	.container {
-		display: grid;
-		place-content: center;
-		place-items: center;
-	}
-</style>
+<div class=" max-w-screen-2xl overflow-x-auto">
+	<Script code={data.code} />
+</div>

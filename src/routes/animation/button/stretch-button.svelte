@@ -14,11 +14,11 @@
 		text-transform: uppercase;
 		background-color: transparent;
 		font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 300;
 		letter-spacing: -2px;
 		border: 3px solid var(--red);
-		padding: 40px 80px;
+		padding: 30px 60px;
 		transition: all 500ms;
 		/* This is for view transition. You don't need this in your code */
 		view-transition-name: stretch;
