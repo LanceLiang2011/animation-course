@@ -13,9 +13,9 @@
 		color: var(--dark-gray);
 		background-color: transparent;
 		font-family: sans-serif;
-		font-size: 45px;
+		font-size: 35px;
 		border: 4px solid var(--dark-gray);
-		padding: 40px 80px;
+		padding: 30px 60px;
 		position: relative;
 		transition: all 800ms;
 		/* This is for view transition. You don't need this in your code */

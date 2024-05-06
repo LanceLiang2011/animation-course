@@ -22,9 +22,9 @@
 		cursor: pointer;
 		background-color: var(--dark-gray);
 		font-family: sans-serif;
-		font-size: 42px;
+		font-size: 35px;
 		border: 4px solid var(--dark-gray);
-		padding: 40px 80px;
+		padding: 30px 60px;
 		position: relative;
 		overflow: hidden;
 		transition: transform 0.5s;

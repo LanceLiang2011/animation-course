@@ -26,6 +26,9 @@
 		font-family: sans-serif;
 		font-size: 35px;
 		letter-spacing: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		border: none;
 		padding: 40px 80px;
 		position: relative;

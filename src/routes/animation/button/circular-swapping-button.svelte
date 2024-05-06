@@ -12,11 +12,11 @@
 		color: tomato;
 		background-color: transparent;
 		font-family: sans-serif;
-		font-size: 35px;
+		font-size: 30px;
 		text-transform: uppercase;
 		text-align: center;
 		border: 4px solid tomato;
-		padding: 30px 70px;
+		padding: 20px 50px;
 		position: relative;
 		transition: all 500ms;
 		overflow: hidden;

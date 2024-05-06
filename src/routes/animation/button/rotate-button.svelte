@@ -14,9 +14,13 @@
 		color: var(--dark-gray);
 		background-color: transparent;
 		font-family: sans-serif;
-		font-size: 45px;
-		border: 5px solid var(--dark-gray);
-		padding: 40px 80px;
+		font-size: 35px;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 4px solid var(--dark-gray);
+		padding: 30px 60px;
 		position: relative;
 		overflow: hidden;
 		/* This is for view transition. You don't need this in your code */

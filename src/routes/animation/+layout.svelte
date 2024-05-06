@@ -1,15 +1,31 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { ScrollArea } from '$lib/components/ui/scroll-area/index.js';
+	import { Separator } from '$lib/components/ui/separator/index.js';
 	export let data: PageData;
 </script>
 
 <div class="container">
 	<nav>
-		<ul>
+		<ScrollArea class="w-36 rounded-md border">
+			<div class="p-4">
+				<h4 class="mb-4 text-sm font-medium leading-none">Animations</h4>
+				<Separator class="my-2" />
+				{#each data.formattedRoutes as route, i}
+					<div class="text-sm">
+						<a href={route.path}>{route.name}</a>
+					</div>
+					{#if i !== data.formattedRoutes.length - 1}
+						<Separator class="my-2" />
+					{/if}
+				{/each}
+			</div>
+		</ScrollArea>
+		<!-- <ul>
 			{#each data.formattedRoutes as route}
 				<li><a href={route.path}>{route.name}</a></li>
 			{/each}
-		</ul>
+		</ul> -->
 	</nav>
 	<main><slot /></main>
 </div>

@@ -21,6 +21,9 @@
 		--light-gray: #ababab;
 		padding: 20px 40px;
 		letter-spacing: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		color: var(--yellow);
 		background-color: var(--light-gray);
 		border: 3px solid var(--yellow);

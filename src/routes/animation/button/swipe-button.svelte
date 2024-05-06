@@ -13,9 +13,9 @@
 		color: var(--dark-purple);
 		background-color: transparent;
 		font-family: sans-serif;
-		font-size: 45px;
+		font-size: 35px;
 		border: 4px solid var(--dark-purple);
-		padding: 40px 80px;
+		padding: 20px 60px;
 		position: relative;
 		transition: all 800ms;
 		overflow: hidden;

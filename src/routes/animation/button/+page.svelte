@@ -17,8 +17,8 @@
 <svelte:head>
 	<title>Button Animation</title>
 </svelte:head>
-<h1>Button Animations</h1>
-<p>Hover to see the animation. Click to see the code.</p>
+<h1 class="title mb-6">Button Animations</h1>
+<p class="paragraph mb-12">Hover to see the animation. Click to see the code.</p>
 <div class="container">
 	<RotateButton href="/animation/button/rotate-button">Hover Me</RotateButton>
 	<SwipeButton href="/animation/button/swipe-button">Hover Me</SwipeButton>
@@ -42,16 +42,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px;
-	}
-	h1 {
-		font-size: 3rem;
-		margin-bottom: 12px;
-		font-family: sans-serif;
-	}
-	p {
-		font-size: 2rem;
-		font-weight: 600;
-		margin-bottom: 16px;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		align-items: center;
+		justify-items: center;
 	}
 </style>
