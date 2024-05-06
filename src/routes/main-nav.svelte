@@ -21,9 +21,13 @@
 		<Menubar.Content>
 			<a href="/animation"><Menubar.Item>Vanila Animation</Menubar.Item></a>
 			<Menubar.Separator />
-			<a href="#" aria-disabled="true"><Menubar.Item>SVG Animation</Menubar.Item></a>
+			<a class="line-through" href="#" aria-disabled="true"
+				><Menubar.Item>SVG Animation</Menubar.Item></a
+			>
 			<Menubar.Separator />
-			<a href="#" aria-disabled="true"><Menubar.Item>GSAP Animation</Menubar.Item></a>
+			<a class="line-through" href="#" aria-disabled="true"
+				><Menubar.Item>GSAP Animation</Menubar.Item></a
+			>
 		</Menubar.Content>
 	</Menubar.Menu>
 </Menubar.Root>

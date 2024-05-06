@@ -13,6 +13,7 @@
 	import ThreedotButton from './threedot-button.svelte';
 	import PepsiButton from './pepsi-button.svelte';
 	import SplitedButton from './splited-button.svelte';
+	import SwappingButton from './swapping-button.svelte';
 </script>
 
 <svelte:head>
@@ -36,6 +37,7 @@
 	<ThreedotButton href="/animation/button/threedot-button">Hover Me</ThreedotButton>
 	<PepsiButton href="/animation/button/pepsi-button">Hover Me</PepsiButton>
 	<SplitedButton href="/animation/button/splited-button">Hover Me</SplitedButton>
+	<SwappingButton class="m-8" href="/animation/button/swapping-button">Hover Me</SwappingButton>
 	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
 </div>
 
