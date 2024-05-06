@@ -14,6 +14,7 @@
 	import PepsiButton from './pepsi-button.svelte';
 	import SplitedButton from './splited-button.svelte';
 	import SwappingButton from './swapping-button.svelte';
+	import BorderGrowButton from './border-grow-button.svelte';
 </script>
 
 <svelte:head>
@@ -38,6 +39,7 @@
 	<PepsiButton href="/animation/button/pepsi-button">Hover Me</PepsiButton>
 	<SplitedButton href="/animation/button/splited-button">Hover Me</SplitedButton>
 	<SwappingButton class="m-8" href="/animation/button/swapping-button">Hover Me</SwappingButton>
+	<BorderGrowButton href="/animation/button/border-grow-button">Hover Me</BorderGrowButton>
 	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
 </div>
 
