@@ -24,7 +24,7 @@
 </svelte:head>
 <h1 class="title mb-6">Button Animations</h1>
 <p class="paragraph mb-12">Hover to see the animation. Click to see the code.</p>
-<div class="container">
+<div class="flex flex-wrap items-center justify-center gap-4">
 	<RotateButton href="/animation/button/rotate-button">Hover Me</RotateButton>
 	<SwipeButton href="/animation/button/swipe-button">Hover Me</SwipeButton>
 	<CrossButton href="/animation/button/cross-button">Hover Me</CrossButton>
@@ -46,13 +46,3 @@
 	<FourBorderButton href="/animation/button/four-border-button">Hover Me</FourBorderButton>
 	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
 </div>
-
-<style>
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 12px;
-		align-items: center;
-		justify-items: center;
-	}
-</style>
