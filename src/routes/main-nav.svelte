@@ -19,13 +19,11 @@
 			>Animation</Menubar.Trigger
 		>
 		<Menubar.Content>
-			<a href="/animation">
-				<Menubar.Item>All Animations</Menubar.Item>
-			</a>
+			<a href="/animation"><Menubar.Item>Vanila Animation</Menubar.Item></a>
 			<Menubar.Separator />
-			<a href="/animation/button"><Menubar.Item>Button</Menubar.Item></a>
-			<a href="/animation/transform"><Menubar.Item>Transform</Menubar.Item></a>
-			<a href="/animation/transition"><Menubar.Item>Transition</Menubar.Item></a>
+			<a href="#" aria-disabled="true"><Menubar.Item>SVG Animation</Menubar.Item></a>
+			<Menubar.Separator />
+			<a href="#" aria-disabled="true"><Menubar.Item>GSAP Animation</Menubar.Item></a>
 		</Menubar.Content>
 	</Menubar.Menu>
 </Menubar.Root>
