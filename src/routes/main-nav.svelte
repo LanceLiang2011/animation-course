@@ -9,10 +9,9 @@
 	<Menubar.Menu>
 		<Menubar.Trigger class={cn([{ 'bg-gray-200': mainPath === '' }])}>Home</Menubar.Trigger>
 		<Menubar.Content>
-			<Menubar.Item>
-				<a href="/">Home</a>
-				<!-- <Menubar.Shortcut>⌘T</Menubar.Shortcut> -->
-			</Menubar.Item>
+			<a href="/">
+				<Menubar.Item>Home</Menubar.Item>
+			</a>
 		</Menubar.Content>
 	</Menubar.Menu>
 	<Menubar.Menu>
@@ -20,14 +19,13 @@
 			>Animation</Menubar.Trigger
 		>
 		<Menubar.Content>
-			<Menubar.Item>
-				<a href="/animation">All Animations</a>
-				<!-- <Menubar.Shortcut>⌘T</Menubar.Shortcut> -->
-			</Menubar.Item>
+			<a href="/animation">
+				<Menubar.Item>All Animations</Menubar.Item>
+			</a>
 			<Menubar.Separator />
-			<Menubar.Item><a href="/animation/button">Button</a></Menubar.Item>
-			<Menubar.Item><a href="/animation/transform">Transform</a></Menubar.Item>
-			<Menubar.Item><a href="/animation/transition">Transition</a></Menubar.Item>
+			<a href="/animation/button"><Menubar.Item>Button</Menubar.Item></a>
+			<a href="/animation/transform"><Menubar.Item>Transform</Menubar.Item></a>
+			<a href="/animation/transition"><Menubar.Item>Transition</Menubar.Item></a>
 		</Menubar.Content>
 	</Menubar.Menu>
 </Menubar.Root>
