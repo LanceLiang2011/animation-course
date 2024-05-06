@@ -12,7 +12,7 @@
 	<nav>
 		<ScrollArea class="w-36 rounded-md border">
 			<div class="p-4">
-				<h4 class="mb-4 text-sm font-medium leading-none">Animations</h4>
+				<h4 class="mb-4 text-sm font-medium text-center leading-none">Animations</h4>
 				<Separator class="my-2" />
 				{#each data.formattedRoutes as route, i (route.path)}
 					<Routetag {route} />
