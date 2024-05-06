@@ -9,7 +9,7 @@
 	<title>{data.params.name}</title>
 </svelte:head>
 <div class="container">
-	<svelte:component this={data.component} href="/animation/button">Back</svelte:component>
+	<svelte:component this={data.component} href="/animation/button">Go Back</svelte:component>
 </div>
 <Badge class="ml-4">{data.params.name}.svelte</Badge>
 <Script code={data.code} />
