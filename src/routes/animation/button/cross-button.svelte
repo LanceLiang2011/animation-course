@@ -33,7 +33,7 @@
 		top: 0;
 		left: 0;
 		height: 100%;
-		width: 100%;
+		width: 101%;
 		z-index: -1;
 		transform: rotateX(90deg);
 		transition: inherit;
