@@ -2,7 +2,7 @@
 	export let href: string;
 </script>
 
-<a {href}>
+<a {...$$restProps} {href}>
 	<slot />
 </a>
 
