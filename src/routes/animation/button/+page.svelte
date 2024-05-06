@@ -16,6 +16,7 @@
 	import SwappingButton from './swapping-button.svelte';
 	import BorderGrowButton from './border-grow-button.svelte';
 	import CapitalRotateButton from './capital-rotate-button.svelte';
+	import FourBorderButton from './four-border-button.svelte';
 </script>
 
 <svelte:head>
@@ -42,6 +43,7 @@
 	<SwappingButton class="m-8" href="/animation/button/swapping-button">Hover Me</SwappingButton>
 	<BorderGrowButton href="/animation/button/border-grow-button">Hover Me</BorderGrowButton>
 	<CapitalRotateButton href="/animation/button/capital-rotate-button">Button</CapitalRotateButton>
+	<FourBorderButton href="/animation/button/four-border-button">Hover Me</FourBorderButton>
 	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
 </div>
 
