@@ -2,7 +2,7 @@
 	import RotateButton from './rotate-button.svelte';
 	import SwipeButton from './swipe-button.svelte';
 	import CrossButton from './cross-button.svelte';
-	import StretchButton from './stretch-button.svelte';
+	// import StretchButton from './stretch-button.svelte';
 	import SwipeTextButton from './swipe-text-button.svelte';
 	import GlowingButton from './glowing-button.svelte';
 	import LayerButton from './layer-button.svelte';
@@ -19,6 +19,7 @@
 	import FourBorderButton from './four-border-button.svelte';
 	import WavyButton from './wavy-button.svelte';
 	import CutButton from './cut-button.svelte';
+	import TwoSkewButton from './two-skew-button.svelte';
 </script>
 
 <svelte:head>
@@ -48,5 +49,6 @@
 	<FourBorderButton href="/animation/button/four-border-button">Hover Me</FourBorderButton>
 	<WavyButton href="/animation/button/wavy-button">Hover Me</WavyButton>
 	<CutButton href="/animation/button/cut-button">Hover Me</CutButton>
-	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
+	<TwoSkewButton href="/animation/button/two-skew-button">Button</TwoSkewButton>
+	<!-- <StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton> -->
 </div>
