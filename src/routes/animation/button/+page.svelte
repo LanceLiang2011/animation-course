@@ -21,6 +21,7 @@
 	import CutButton from './cut-button.svelte';
 	import TwoSkewButton from './two-skew-button.svelte';
 	import PulsingButton from './pulsing-button.svelte';
+	import DiagonalSwipeButton from './diagonal-swipe-button.svelte';
 </script>
 
 <svelte:head>
@@ -52,5 +53,6 @@
 	<CutButton href="/animation/button/cut-button">Hover Me</CutButton>
 	<TwoSkewButton href="/animation/button/two-skew-button">Button</TwoSkewButton>
 	<PulsingButton href="/animation/button/pulsing-button">Hover Me</PulsingButton>
+	<DiagonalSwipeButton href="/animation/button/diagonal-swipe-button">Hover Me</DiagonalSwipeButton>
 	<!-- <StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton> -->
 </div>
