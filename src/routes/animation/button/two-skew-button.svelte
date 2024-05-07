@@ -27,7 +27,7 @@
 		height: 100%;
 		width: 50%;
 		z-index: -1;
-		transition: transform 500ms;
+		transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
 
 	a::before {
