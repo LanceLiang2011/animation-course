@@ -18,6 +18,7 @@
 	import CapitalRotateButton from './capital-rotate-button.svelte';
 	import FourBorderButton from './four-border-button.svelte';
 	import WavyButton from './wavy-button.svelte';
+	import CutButton from './cut-button.svelte';
 </script>
 
 <svelte:head>
@@ -46,5 +47,6 @@
 	<CapitalRotateButton href="/animation/button/capital-rotate-button">Button</CapitalRotateButton>
 	<FourBorderButton href="/animation/button/four-border-button">Hover Me</FourBorderButton>
 	<WavyButton href="/animation/button/wavy-button">Hover Me</WavyButton>
+	<CutButton href="/animation/button/cut-button">Hover Me</CutButton>
 	<StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton>
 </div>
