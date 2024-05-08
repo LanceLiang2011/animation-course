@@ -30,7 +30,7 @@
 		<a
 			href="https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/image/slide-hover-image.svelte"
 			target="_blank"
-			class=" font-bold text-blue-300 underline">See Code</a
+			class=" font-bold text-blue-300 underline">GitHub Code</a
 		>
 	</figcaption>
 </figure>
