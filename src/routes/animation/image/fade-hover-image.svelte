@@ -16,9 +16,9 @@
 		absolute left-0 top-0
 		flex h-full w-full flex-col items-center justify-center
 		bg-black/0 text-white opacity-0 transition-all duration-500
-		hover:bg-black/60 hover:opacity-100"
+		group-hover:bg-black/60 group-hover:opacity-100"
 	>
-		<h2 class="mb-8 text-2xl uppercase">
+		<h2 class="mb-8 px-6 text-2xl uppercase">
 			Feren and Stark in cat form
 		</h2>
 		<p class=" mb-4 text-lg capitalize">
@@ -47,9 +47,9 @@
 		absolute left-0 top-0
 		flex h-full w-full flex-col items-center justify-center
 		bg-black/0 text-white opacity-0 transition-all duration-500
-		hover:bg-black/60 hover:opacity-100"
+		group-hover:bg-black/60 group-hover:opacity-100"
 	>
-		<h2 class="mb-8 text-2xl uppercase">Feren and Stark in cat form</h2>
+		<h2 class="mb-8 px-6 text-2xl uppercase">Feren and Stark in cat form</h2>
 		<p class=" mb-4 text-lg capitalize">
 			Frieren fan art by <a class="underline" target="_blank" href="https://twitter.com/BoHumbo"
 				>JHumbo</a
