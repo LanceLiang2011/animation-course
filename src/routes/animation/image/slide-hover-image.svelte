@@ -15,7 +15,7 @@
 	<figcaption
 		class={cn([
 			'absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center',
-			'bg-black/0 text-white opacity-0 transition-all duration-500',
+			'bg-black/0 text-center text-white opacity-0 transition-all duration-500',
 			'group-hover:translate-x-0 group-hover:bg-black/60 group-hover:opacity-100',
 			{ 'translate-x-full': direction === 'right' },
 			{ '-translate-x-full': direction === 'left' }

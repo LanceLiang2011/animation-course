@@ -15,7 +15,8 @@
 		class="
 		absolute left-0 top-0
 		flex h-full w-full flex-col items-center justify-center
-		bg-black/0 text-white opacity-0 transition-all duration-500
+		bg-black/0 text-white text-center
+		opacity-0 transition-all duration-500
 		group-hover:bg-black/60 group-hover:opacity-100"
 	>
 		<h2 class="mb-8 px-6 text-2xl uppercase">
@@ -46,7 +47,7 @@
 		class="
 		absolute left-0 top-0
 		flex h-full w-full flex-col items-center justify-center
-		bg-black/0 text-white opacity-0 transition-all duration-500
+		bg-black/0 text-center text-white opacity-0 transition-all duration-500
 		group-hover:bg-black/60 group-hover:opacity-100"
 	>
 		<h2 class="mb-8 px-6 text-2xl uppercase">Feren and Stark in cat form</h2>

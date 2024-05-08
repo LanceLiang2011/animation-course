@@ -1,4 +1,5 @@
 <script lang="ts">
+	import DrawerHoverImage from './drawer-hover-image.svelte';
 	import FadeHoverImage from './fade-hover-image.svelte';
 	import SlideHoverImage from './slide-hover-image.svelte';
 </script>
@@ -12,4 +13,5 @@
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
 	<FadeHoverImage />
 	<SlideHoverImage direction="right" />
+	<DrawerHoverImage />
 </div>
