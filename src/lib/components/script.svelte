@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { codeToHtml } from 'shiki';
 	export let code: string;
+	export let lang: string = 'javascript';
 	let htmlPromise = codeToHtml(code, {
-		lang: 'javascript',
+		lang,
 		theme: 'catppuccin-mocha'
 	});
 </script>
