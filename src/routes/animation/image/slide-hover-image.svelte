@@ -24,7 +24,7 @@
 		<h2 class="mb-8 whitespace-pre-line px-6 text-2xl uppercase">Frieren and Serie in cat form</h2>
 		<p class=" mb-4 text-lg capitalize">
 			Frieren fan art by <a class="underline" target="_blank" href="https://twitter.com/BoHumbo"
-				>JHumbo</a
+				>@JHumbo</a
 			>
 		</p>
 		<a

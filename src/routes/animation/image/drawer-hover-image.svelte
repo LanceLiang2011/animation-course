@@ -5,12 +5,7 @@
 
 <div class="overflow-hidden">
 	<figure class="relative transition-transform duration-300 hover:-translate-y-1/4">
-		<img
-			class="
-      w-full"
-			src={bochiCat}
-			alt="Bochi and Kita in cat form, Bochi the Rock fan art"
-		/>
+		<img class="w-full" src={bochiCat} alt="Bochi and Kita in cat form, Bochi the Rock fan art" />
 		<figcaption
 			class={cn([
 				'absolute -bottom-1/4 left-0 flex h-1/4 w-full flex-col items-center justify-center',
@@ -22,7 +17,7 @@
 				Bochi the Rock fan art by <a
 					class="underline"
 					target="_blank"
-					href="https://twitter.com/BoHumbo">JHumbo</a
+					href="https://twitter.com/BoHumbo">@JHumbo</a
 				>
 			</p>
 		</figcaption>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import DelayCaptionImage from './delay-caption-image.svelte';
 	import DrawerHoverImage from './drawer-hover-image.svelte';
 	import FadeHoverImage from './fade-hover-image.svelte';
 	import SlideHoverImage from './slide-hover-image.svelte';
@@ -14,4 +15,5 @@
 	<FadeHoverImage />
 	<SlideHoverImage direction="right" />
 	<DrawerHoverImage />
+	<DelayCaptionImage />
 </div>

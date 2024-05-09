@@ -27,7 +27,7 @@
 			<a class="underline"
 			 target="_blank"
 			  href="https://twitter.com/BoHumbo"
-				>JHumbo</a
+				>@JHumbo</a
 			>
 		</p>
 	</figcaption>
@@ -53,7 +53,7 @@
 		<h2 class="mb-8 px-6 text-2xl uppercase">Feren and Stark in cat form</h2>
 		<p class=" mb-4 text-lg capitalize">
 			Frieren fan art by <a class="underline" target="_blank" href="https://twitter.com/BoHumbo"
-				>JHumbo</a
+				>@JHumbo</a
 			>
 		</p>
 		<Dialog.Root>
