@@ -34,12 +34,14 @@
 		transform: translate(-50%, -50%);
 		color: var(--text-color);
 		font-size: 0.4em;
+		letter-spacing: 1rem;
 		text-shadow:
 			rgb(53, 128, 242) 0px 1px 10px,
 			rgb(53, 128, 242) 0px 1px 20px,
 			rgb(53, 128, 242) 0px 1px 30px;
 	}
 	a:hover::before {
-		@apply opacity-100;
+		@apply opacity-100 delay-200;
+		letter-spacing: 0.1rem;
 	}
 </style>
