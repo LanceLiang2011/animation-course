@@ -2,6 +2,7 @@
 	import TwoLinesMenu from './two-lines-menu.svelte';
 	import type { Link } from './manutypes';
 	import BgCornerlineMenu from './bg-cornerline-menu.svelte';
+	import SplitBarMenu from './split-bar-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -32,4 +33,5 @@
 	<p class="paragraph mb-12">Hover to see the transitions. Click "Code" menu see the code.</p>
 	<TwoLinesMenu {links} />
 	<BgCornerlineMenu {links} />
+	<SplitBarMenu {links} />
 </div>
