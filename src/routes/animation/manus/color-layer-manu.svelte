@@ -27,6 +27,7 @@
 <style lang="postcss">
 	a {
 		-webkit-text-stroke: 1px #333;
+		font-family: 'Courier New', Courier, monospace;
 	}
 	a:hover {
 		@apply text-white;
