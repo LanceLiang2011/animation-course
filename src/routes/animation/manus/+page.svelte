@@ -6,6 +6,7 @@
 	import TwoBarMenu from './two-bar-menu.svelte';
 	import FocusBlurMenu from './focus-blur-menu.svelte';
 	import DelaySlideMenu from './delay-slide-menu.svelte';
+	import TwoBordersBgManu from './two-borders-bg-manu.svelte';
 
 	const links: Link[] = [
 		{
@@ -40,4 +41,5 @@
 	<TwoBarMenu {links} />
 	<FocusBlurMenu {links} />
 	<DelaySlideMenu {links} />
+	<TwoBordersBgManu {links} />
 </div>
