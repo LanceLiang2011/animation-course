@@ -8,6 +8,7 @@
 	import DelaySlideMenu from './delay-slide-menu.svelte';
 	import TwoBordersBgManu from './two-borders-bg-manu.svelte';
 	import SniperMenu from './sniper-menu.svelte';
+	import ColorLayerManu from './color-layer-manu.svelte';
 
 	const links: Link[] = [
 		{
@@ -36,6 +37,7 @@
 <div class="flex flex-col items-center">
 	<h1 class="title mb-6">Menu Transitions</h1>
 	<p class="paragraph mb-12">Hover to see the transitions. Click "Code" menu see the code.</p>
+	<ColorLayerManu {links} />
 	<TwoLinesMenu {links} />
 	<BgCornerlineMenu {links} />
 	<SplitBarMenu {links} />
