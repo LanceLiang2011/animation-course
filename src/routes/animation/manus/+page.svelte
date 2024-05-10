@@ -7,6 +7,7 @@
 	import FocusBlurMenu from './focus-blur-menu.svelte';
 	import DelaySlideMenu from './delay-slide-menu.svelte';
 	import TwoBordersBgManu from './two-borders-bg-manu.svelte';
+	import SniperMenu from './sniper-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -42,4 +43,5 @@
 	<FocusBlurMenu {links} />
 	<DelaySlideMenu {links} />
 	<TwoBordersBgManu {links} />
+	<SniperMenu {links} />
 </div>
