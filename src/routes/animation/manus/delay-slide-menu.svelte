@@ -25,6 +25,7 @@
 		<li>
 			<a
 				class="before group relative block h-10 overflow-hidden px-3 before:absolute before:left-0 before:top-0 before:-z-50 before:h-full before:w-full before:-translate-y-full before:bg-sky-700 before:transition-transform before:duration-500 before:content-[''] hover:before:translate-y-0"
+				target="_blank"
 				href={'https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/manus/delay-slide-menu.svelte'}
 			>
 				<span
