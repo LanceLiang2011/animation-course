@@ -3,6 +3,7 @@
 	import type { Link } from './manutypes';
 	import BgCornerlineMenu from './bg-cornerline-menu.svelte';
 	import SplitBarMenu from './split-bar-menu.svelte';
+	import TwoBarMenu from './two-bar-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -34,4 +35,5 @@
 	<TwoLinesMenu {links} />
 	<BgCornerlineMenu {links} />
 	<SplitBarMenu {links} />
+	<TwoBarMenu {links} />
 </div>
