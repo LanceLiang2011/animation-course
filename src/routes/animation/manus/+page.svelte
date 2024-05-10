@@ -4,6 +4,7 @@
 	import BgCornerlineMenu from './bg-cornerline-menu.svelte';
 	import SplitBarMenu from './split-bar-menu.svelte';
 	import TwoBarMenu from './two-bar-menu.svelte';
+	import FocusBlurMenu from './focus-blur-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -36,4 +37,5 @@
 	<BgCornerlineMenu {links} />
 	<SplitBarMenu {links} />
 	<TwoBarMenu {links} />
+	<FocusBlurMenu {links} />
 </div>
