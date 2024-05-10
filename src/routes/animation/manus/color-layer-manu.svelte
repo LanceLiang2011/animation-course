@@ -28,6 +28,9 @@
 	a {
 		-webkit-text-stroke: 1px #333;
 	}
+	a:hover {
+		@apply text-white;
+	}
 	a::before,
 	a::after {
 		content: attr(data-text);
