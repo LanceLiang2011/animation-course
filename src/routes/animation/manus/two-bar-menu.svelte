@@ -38,4 +38,10 @@
 	a:hover::after {
 		@apply scale-x-100;
 	}
+	a:hover::before {
+		@apply translate-x-full;
+	}
+	a:hover::after {
+		@apply -translate-x-full;
+	}
 </style>
