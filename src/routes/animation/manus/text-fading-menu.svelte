@@ -9,14 +9,14 @@
 			<li>
 				<a
 					data-text={link.name}
-					class="relative block px-3 py-2 transition-colors duration-500 hover:text-gray-300"
+					class="relative block px-3 py-2 transition-colors duration-500 hover:text-gray-200"
 					href={link.anchor}>{link.name}</a
 				>
 			</li>
 		{/each}
 		<li>
 			<a
-				class="relative block px-3 py-2 transition-colors duration-500 hover:text-gray-300"
+				class="relative block px-3 py-2 transition-colors duration-500 hover:text-gray-200"
 				data-text="Code"
 				target="_blank"
 				href={'https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/manus/text-fading-menu.svelte'}
