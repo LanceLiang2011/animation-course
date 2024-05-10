@@ -5,6 +5,7 @@
 	import SplitBarMenu from './split-bar-menu.svelte';
 	import TwoBarMenu from './two-bar-menu.svelte';
 	import FocusBlurMenu from './focus-blur-menu.svelte';
+	import DelaySlideMenu from './delay-slide-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -38,4 +39,5 @@
 	<SplitBarMenu {links} />
 	<TwoBarMenu {links} />
 	<FocusBlurMenu {links} />
+	<DelaySlideMenu {links} />
 </div>

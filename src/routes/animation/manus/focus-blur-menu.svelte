@@ -23,6 +23,3 @@
 		</li>
 	</ul>
 </nav>
-
-<style lang="postcss">
-</style>
