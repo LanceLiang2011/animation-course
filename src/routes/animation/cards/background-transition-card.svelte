@@ -7,7 +7,7 @@
 	<slot name="title" class="mb-3 text-2xl font-bold" />
 	<slot name="content" class="" />
 	<a
-		class=" mt-4 block rounded-sm bg-slate-800 px-3 py-2 font-semibold text-white"
+		class="mt-4 block rounded-sm bg-slate-800 px-3 py-2 font-semibold text-white"
 		target="_blank"
 		href="https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/cards/background-transition-card.svelte"
 		>See Code</a
@@ -22,12 +22,4 @@
 	article:hover::before {
 		@apply scale-y-100;
 	}
-	/* article :global([slot='title']) {
-	}
-
-	article :global([slot='content']) {
-	}
-
-	a {
-	} */
 </style>
