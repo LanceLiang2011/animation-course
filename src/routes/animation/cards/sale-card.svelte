@@ -18,12 +18,12 @@
 		<div class=" z-20 pb-6 text-white">
 			<h2 class="text-2xl font-bold">Special Potion On Sale</h2>
 			<p
-				class="bg-gradient-to-r from-sky-500 via-green-400 to-indigo-300 bg-clip-text py-2 text-2xl font-bold text-transparent"
+				class=" bg-gradient-to-r from-sky-500 via-green-400 to-indigo-300 bg-clip-text py-2 text-2xl font-bold text-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 			>
 				$699.<span class=" text-sm">99</span>
 			</p>
 			<a
-				class="flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 font-mono font-bold text-white"
+				class="flex items-center justify-center rounded-md bg-gray-800 px-4 py-2 font-mono font-bold text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 				href="https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/cards/sale-card.svelte"
 				target="_blank">See Code</a
 			>
