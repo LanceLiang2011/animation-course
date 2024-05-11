@@ -36,9 +36,10 @@
 	<title>Menu Transitions</title>
 </svelte:head>
 
+<h1 class="title mb-6">Menu Transitions</h1>
+<p class="paragraph mb-12">Hover to see the transitions. Click "Code" tag to see the code.</p>
+
 <div class="flex flex-col items-center">
-	<h1 class="title mb-6">Menu Transitions</h1>
-	<p class="paragraph mb-12">Hover to see the transitions. Click "Code" tag to see the code.</p>
 	<ColorLayerManu {links} />
 	<CursorMenu {links} />
 	<TextFadingMenu {links} />
