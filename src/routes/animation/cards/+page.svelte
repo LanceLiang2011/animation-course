@@ -9,6 +9,7 @@
 	import { DraftingCompass } from 'lucide-svelte';
 	import PhotoCard from './photo-card.svelte';
 	import ScaleCard from './scale-card.svelte';
+	import SaleCard from './sale-card.svelte';
 </script>
 
 <svelte:head>
@@ -71,4 +72,5 @@
 	</FigureCard>
 	<PhotoCard />
 	<ScaleCard />
+	<SaleCard />
 </div>

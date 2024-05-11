@@ -22,10 +22,7 @@
 		<a
 			class=" rounded-md bg-gray-800 px-4 py-2 text-white"
 			href="https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/cards/scale-card.svelte"
-			>Code</a
+			target="_blank">Code</a
 		>
 	</div>
 </article>
-
-<style lang="postcss">
-</style>
