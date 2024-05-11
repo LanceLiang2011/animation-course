@@ -8,6 +8,7 @@
 	import TwoFaceCard from './two-face-card.svelte';
 	import { DraftingCompass } from 'lucide-svelte';
 	import PhotoCard from './photo-card.svelte';
+	import ScaleCard from './scale-card.svelte';
 </script>
 
 <svelte:head>
@@ -69,4 +70,5 @@
 		</svelte:fragment>
 	</FigureCard>
 	<PhotoCard />
+	<ScaleCard />
 </div>
