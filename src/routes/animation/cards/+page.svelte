@@ -7,6 +7,7 @@
 	import HoverExpandCard from './hover-expand-card.svelte';
 	import TwoFaceCard from './two-face-card.svelte';
 	import { DraftingCompass } from 'lucide-svelte';
+	import PhotoCard from './photo-card.svelte';
 </script>
 
 <svelte:head>
@@ -67,4 +68,5 @@
 			</p>
 		</svelte:fragment>
 	</FigureCard>
+	<PhotoCard />
 </div>
