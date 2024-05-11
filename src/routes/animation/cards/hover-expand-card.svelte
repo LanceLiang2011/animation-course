@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
 	import { gsap } from 'gsap';
 	import Flip from 'gsap/dist/Flip';
 	gsap.registerPlugin(Flip);
