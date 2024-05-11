@@ -38,6 +38,8 @@
 			<slot name="content" class="" />
 		</div>
 		<a
+			in:fly={{ y: -100, duration: 500, delay: 500 }}
+			out:fade
 			class="mt-4 block rounded-sm bg-slate-800 px-3 py-2 font-semibold text-white"
 			target="_blank"
 			href="https://github.com/LanceLiang2011/animation-course/blob/master/src/routes/animation/cards/hover-expand-card.svelte"
