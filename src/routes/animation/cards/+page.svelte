@@ -13,10 +13,10 @@
 </script>
 
 <svelte:head>
-	<title>Card Transition</title>
+	<title>Card Animations</title>
 </svelte:head>
 
-<h1 class="title mb-8">Card Transitions</h1>
+<h1 class="title mb-8">Card Animations</h1>
 
 <div
 	class="grid grid-cols-1 place-content-start place-items-start gap-6 md:grid-cols-2 xl:grid-cols-3"

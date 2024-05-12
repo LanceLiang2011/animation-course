@@ -33,10 +33,10 @@
 </script>
 
 <svelte:head>
-	<title>Menu Transitions</title>
+	<title>Menu Animations</title>
 </svelte:head>
 
-<h1 class="title mb-6">Menu Transitions</h1>
+<h1 class="title mb-6">Menu Animations</h1>
 <p class="paragraph mb-12">Hover to see the transitions. Click "Code" tag to see the code.</p>
 
 <div class="flex flex-col items-center">
