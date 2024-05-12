@@ -3,12 +3,16 @@
 </script>
 
 <div class="bg relative h-[28rem] bg-suburban-street bg-right-bottom">
-	<img src={dragonBall} alt="Running Man" class="absolute bottom-0 left-1/2 -translate-x-1/2" />
+	<img
+		src={dragonBall}
+		alt="Running Son Goku"
+		class="absolute bottom-0 left-1/2 -translate-x-1/2"
+	/>
 </div>
 
 <style lang="postcss">
 	.bg {
-		animation: running 60s infinite linear both;
+		animation: running 10s infinite linear both;
 	}
 
 	@keyframes running {
@@ -16,7 +20,7 @@
 			background-position: 0 40%;
 		}
 		to {
-			background-position: 2000% 40%;
+			background-position: -1920px 40%;
 		}
 	}
 </style>
