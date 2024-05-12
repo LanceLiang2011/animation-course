@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div class="h-screen bg-chess-pattern bg-left-top bg-repeat"></div>
 
 <style>
