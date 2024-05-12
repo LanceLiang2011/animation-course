@@ -12,7 +12,7 @@
 	<nav>
 		<ScrollArea class="w-36 rounded-md border">
 			<div class="p-4">
-				<h4 class="mb-4 text-sm font-medium text-center leading-none">Animations</h4>
+				<h4 class="mb-4 text-center text-sm font-medium leading-none">Animations</h4>
 				<Separator class="my-2" />
 				{#each data.formattedRoutes as route, i (route.path)}
 					<Routetag {route} />
@@ -22,11 +22,6 @@
 				{/each}
 			</div>
 		</ScrollArea>
-		<!-- <ul>
-			{#each data.formattedRoutes as route}
-				<li><a href={route.path}>{route.name}</a></li>
-			{/each}
-		</ul> -->
 	</nav>
 	<main><slot /></main>
 </div>

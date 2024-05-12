@@ -69,7 +69,8 @@ const config: Config = {
 				float: 'float 3s linear infinite alternate'
 			},
 			backgroundImage: {
-				'suburban-street': "url('/suburban-street.jpeg')"
+				'suburban-street': "url('/suburban-street.jpeg')",
+				'chess-pattern': "url('/chess-pattern.webp')"
 			}
 		}
 	}
