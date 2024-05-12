@@ -8,7 +8,7 @@
 
 <style lang="postcss">
 	.bg {
-		animation: running 30s infinite linear;
+		animation: running 60s infinite linear both;
 	}
 
 	@keyframes running {
@@ -16,7 +16,7 @@
 			background-position: 0 40%;
 		}
 		to {
-			background-position: 1000% 40%;
+			background-position: 2000% 40%;
 		}
 	}
 </style>
