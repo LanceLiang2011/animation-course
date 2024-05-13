@@ -11,6 +11,7 @@
 	import ColorLayerManu from './color-layer-manu.svelte';
 	import CursorMenu from './cursor-menu.svelte';
 	import TextFadingMenu from './text-fading-menu.svelte';
+	import IconMenu from './icon-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -43,6 +44,7 @@
 	<ColorLayerManu {links} />
 	<CursorMenu {links} />
 	<TextFadingMenu {links} />
+	<IconMenu />
 	<TwoLinesMenu {links} />
 	<BgCornerlineMenu {links} />
 	<SplitBarMenu {links} />
