@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AnimationBackground from './animation-background.svelte';
 	import CssTextRotator from './css-text-rotator.svelte';
 	import FloatingText from './floating-text.svelte';
 </script>
@@ -16,4 +17,5 @@
 	<CssTextRotator --first={'"useful"'} --second={'"versatile"'} --third={'"cool"'}
 		>Css is</CssTextRotator
 	>
+	<AnimationBackground class="">CSS Animation</AnimationBackground>
 </div>

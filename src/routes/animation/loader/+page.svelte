@@ -1,6 +1,7 @@
 <script lang="ts">
 	import RotateLoader from './rotate-loader.svelte';
 	import Heart from './heart.svelte';
+	import BouncingBalls from './bouncing-balls.svelte';
 </script>
 
 <svelte:head>
@@ -12,4 +13,5 @@
 <div class="flex flex-wrap items-center justify-center gap-6">
 	<RotateLoader />
 	<Heart />
+	<BouncingBalls />
 </div>
