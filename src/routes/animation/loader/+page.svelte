@@ -5,6 +5,8 @@
 	import PhonePulse from './phone-pulse.svelte';
 	import NewtonCradle from './newton-cradle.svelte';
 	import WindowsLoader from './windows-loader.svelte';
+	import MovingSquares from './moving-squares.svelte';
+	import TextLoader from './text-loader.svelte';
 </script>
 
 <svelte:head>
@@ -20,4 +22,6 @@
 	<PhonePulse />
 	<NewtonCradle />
 	<WindowsLoader />
+	<MovingSquares />
+	<TextLoader />
 </div>

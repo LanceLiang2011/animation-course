@@ -1,4 +1,4 @@
-<section class=" flex items-center justify-center">
+<section class=" flex w-40 items-center justify-center">
 	<div class="absolute h-24 w-24 rotate-45">
 		<span class="absolute left-0 top-0 h-12 w-12 bg-red-400"></span>
 		<span class="absolute bottom-0 left-0 h-12 w-12 bg-green-400"></span>
