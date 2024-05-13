@@ -8,7 +8,7 @@
 	$: yNum = y === 'No' ? 0 : y === 'Up' ? -1 : 1;
 </script>
 
-<div class="mb-8 flex max-w-fit flex-col gap-2">
+<div class="mb-8 flex max-w-fit gap-6">
 	<div>
 		<label for="x" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
 			>Horizontal Scroll</label
@@ -27,7 +27,7 @@
 	</div>
 	<div>
 		<label for="y" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-			>Horizontal Scroll</label
+			>Vertical Scroll</label
 		>
 		<select
 			id="y"
