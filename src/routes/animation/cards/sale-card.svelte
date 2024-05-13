@@ -6,7 +6,7 @@
 	class="group relative overflow-hidden rounded-lg bg-gradient-to-r from-sky-900 to-sky-700 shadow-lg"
 >
 	<div
-		class="z-10 flex translate-y-[20%] flex-col items-center justify-center transition-transform duration-500 hover:translate-y-2"
+		class="z-10 flex translate-y-[20%] flex-col items-center justify-center transition-transform duration-500 group-hover:translate-y-2"
 	>
 		<div class="z-10">
 			<img

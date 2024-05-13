@@ -29,6 +29,3 @@
 		class="absolute bottom-0 left-1/2 w-96 origin-bottom -translate-x-1/2 transition-transform duration-500 group-hover:translate-x-0 group-hover:scale-110"
 	/>
 </article>
-
-<style lang="postcss">
-</style>
