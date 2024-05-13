@@ -2,6 +2,8 @@
 	import RotateLoader from './rotate-loader.svelte';
 	import Heart from './heart.svelte';
 	import BouncingBalls from './bouncing-balls.svelte';
+	import PhonePulse from './phone-pulse.svelte';
+	import NewtonCradle from './newton-cradle.svelte';
 </script>
 
 <svelte:head>
@@ -10,8 +12,10 @@
 
 <h1 class="title mb-6">Loader Animations</h1>
 
-<div class="flex flex-wrap items-center justify-center gap-6">
+<div class="flex flex-wrap items-center justify-center gap-16">
 	<RotateLoader />
 	<Heart />
 	<BouncingBalls />
+	<PhonePulse />
+	<NewtonCradle />
 </div>
