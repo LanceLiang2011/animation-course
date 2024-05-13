@@ -22,6 +22,8 @@
 	import TwoSkewButton from './two-skew-button.svelte';
 	import PulsingButton from './pulsing-button.svelte';
 	import DiagonalSwipeButton from './diagonal-swipe-button.svelte';
+	import ShakingButton from './shaking-button.svelte';
+	import InfiniteSlideButton from './infinite-slide-button.svelte';
 </script>
 
 <svelte:head>
@@ -30,6 +32,7 @@
 <h1 class="title mb-6">Button Animations</h1>
 <p class="paragraph mb-12">Hover to see the animation. Click to see the code.</p>
 <div class="flex flex-wrap items-center justify-center gap-6">
+	<ShakingButton href="/animation/button/shaking-button">Hover Me</ShakingButton>
 	<RotateButton href="/animation/button/rotate-button">Hover Me</RotateButton>
 	<SwipeButton href="/animation/button/swipe-button">Hover Me</SwipeButton>
 	<CrossButton href="/animation/button/cross-button">Hover Me</CrossButton>
@@ -54,5 +57,7 @@
 	<TwoSkewButton href="/animation/button/two-skew-button">Button</TwoSkewButton>
 	<PulsingButton href="/animation/button/pulsing-button">Hover Me</PulsingButton>
 	<DiagonalSwipeButton href="/animation/button/diagonal-swipe-button">Hover Me</DiagonalSwipeButton>
+	<InfiniteSlideButton href="/animation/button/infinite-slide-button">Hover Me</InfiniteSlideButton>
+
 	<!-- <StretchButton href="/animation/button/stretch-button">Hover Me</StretchButton> -->
 </div>
