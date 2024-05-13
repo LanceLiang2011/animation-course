@@ -10,6 +10,7 @@
 	import RingTextLoader from './ring-text-loader.svelte';
 	import SonarLoader from './sonar-loader.svelte';
 	import ColorsLoader from './colors-loader.svelte';
+	import BallSeesaw from './ball-seesaw.svelte';
 </script>
 
 <svelte:head>
@@ -38,4 +39,5 @@
 	<RingTextLoader />
 	<SonarLoader />
 	<ColorsLoader />
+	<BallSeesaw />
 </div>
