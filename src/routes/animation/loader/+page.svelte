@@ -8,6 +8,8 @@
 	import MovingSquares from './moving-squares.svelte';
 	import TextLoader from './text-loader.svelte';
 	import RingTextLoader from './ring-text-loader.svelte';
+	import SonarLoader from './sonar-loader.svelte';
+	import ColorsLoader from './colors-loader.svelte';
 </script>
 
 <svelte:head>
@@ -34,4 +36,6 @@
 	<MovingSquares />
 	<TextLoader />
 	<RingTextLoader />
+	<SonarLoader />
+	<ColorsLoader />
 </div>
