@@ -1,9 +1,11 @@
-<div class="relative h-24 w-24 rotate-45">
-	<span class="absolute left-0 top-0 h-12 w-12 bg-red-400"></span>
-	<span class="absolute bottom-0 left-0 h-12 w-12 bg-green-400"></span>
-	<span class="absolute right-0 top-0 h-12 w-12 bg-blue-400"></span>
-	<span class="absolute bottom-0 right-0 h-12 w-12 bg-yellow-400"></span>
-</div>
+<section class=" flex items-center justify-center">
+	<div class="absolute h-24 w-24 rotate-45">
+		<span class="absolute left-0 top-0 h-12 w-12 bg-red-400"></span>
+		<span class="absolute bottom-0 left-0 h-12 w-12 bg-green-400"></span>
+		<span class="absolute right-0 top-0 h-12 w-12 bg-blue-400"></span>
+		<span class="absolute bottom-0 right-0 h-12 w-12 bg-yellow-400"></span>
+	</div>
+</section>
 
 <style lang="postcss">
 	div {
