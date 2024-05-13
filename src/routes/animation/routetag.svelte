@@ -6,9 +6,9 @@
 
 <div
 	class={cn([
-		'text-sm text-center',
-		{ 'bg-slate-100 rounded-md': $page.url.pathname === route.path }
+		'text-center text-sm',
+		{ 'rounded-md bg-slate-100': $page.url.pathname === route.path }
 	])}
 >
-	<a href={route.path}>{capitalizeString(route.name)}</a>
+	<a href={route.path}>{capitalizeString(route.name.replace('-', ' '))}</a>
 </div>

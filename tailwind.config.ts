@@ -71,7 +71,9 @@ const config: Config = {
 			backgroundImage: {
 				'suburban-street': "url('/suburban-street.jpeg')",
 				'chess-pattern': "url('/chess-pattern.webp')",
-				'summer-season': "url('/summer-season.jpg')"
+				'summer-season': "url('/summer-season.jpg')",
+				'fa-rain': "url('/fa-rain.png')",
+				rain: "url('/rain.png')"
 			}
 		}
 	}
