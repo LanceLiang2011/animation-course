@@ -4,6 +4,7 @@
 	import BouncingBalls from './bouncing-balls.svelte';
 	import PhonePulse from './phone-pulse.svelte';
 	import NewtonCradle from './newton-cradle.svelte';
+	import WindowsLoader from './windows-loader.svelte';
 </script>
 
 <svelte:head>
@@ -18,4 +19,5 @@
 	<BouncingBalls />
 	<PhonePulse />
 	<NewtonCradle />
+	<WindowsLoader />
 </div>
