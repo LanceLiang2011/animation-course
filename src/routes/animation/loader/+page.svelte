@@ -12,6 +12,7 @@
 	import ColorsLoader from './colors-loader.svelte';
 	import BallSeesaw from './ball-seesaw.svelte';
 	import IrragularBorderLoader from './irragular-border-loader.svelte';
+	import SplitTextLoader from './split-text-loader.svelte';
 </script>
 
 <svelte:head>
@@ -42,4 +43,5 @@
 	<ColorsLoader />
 	<BallSeesaw />
 	<IrragularBorderLoader />
+	<SplitTextLoader />
 </div>
