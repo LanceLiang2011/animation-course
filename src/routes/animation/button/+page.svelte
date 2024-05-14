@@ -24,6 +24,7 @@
 	import DiagonalSwipeButton from './diagonal-swipe-button.svelte';
 	import ShakingButton from './shaking-button.svelte';
 	import InfiniteSlideButton from './infinite-slide-button.svelte';
+	import PencilButton from './pencil-button.svelte';
 </script>
 
 <svelte:head>
@@ -33,6 +34,7 @@
 <p class="paragraph mb-12">Hover to see the animation. Click to see the code.</p>
 <div class="flex flex-wrap items-center justify-center gap-6">
 	<ShakingButton href="/animation/button/shaking-button">Hover Me</ShakingButton>
+	<PencilButton href="/animation/button/pencil-button">Hover Me</PencilButton>
 	<RotateButton href="/animation/button/rotate-button">Hover Me</RotateButton>
 	<SwipeButton href="/animation/button/swipe-button">Hover Me</SwipeButton>
 	<CrossButton href="/animation/button/cross-button">Hover Me</CrossButton>
