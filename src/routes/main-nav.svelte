@@ -5,7 +5,7 @@
 	$: mainPath = $page.url.pathname.split('/').at(1);
 </script>
 
-<Menubar.Root class=" w-fit ml-12">
+<Menubar.Root class=" ml-12 w-fit">
 	<Menubar.Menu>
 		<Menubar.Trigger class={cn([{ 'bg-gray-200': mainPath === '' }])}>Home</Menubar.Trigger>
 		<Menubar.Content>
@@ -21,20 +21,11 @@
 		<Menubar.Content>
 			<a href="/animation"><Menubar.Item>Vanila Animation</Menubar.Item></a>
 			<Menubar.Separator />
-			<a class="line-through" href="#" aria-disabled="true"
-				><Menubar.Item>SVG Animation</Menubar.Item></a
-			>
+			<a href="/gsap"><Menubar.Item>GSAP Animation</Menubar.Item></a>
 			<Menubar.Separator />
 			<a class="line-through" href="#" aria-disabled="true"
-				><Menubar.Item>GSAP Animation</Menubar.Item></a
+				><Menubar.Item>Framer Motion Animation</Menubar.Item></a
 			>
 		</Menubar.Content>
 	</Menubar.Menu>
 </Menubar.Root>
-
-<!-- <nav>
-  <ul class="list-none flex gap-4">
-    <li><a href="/">Home</a></li>
-    <li><a href="/animation">Animation</a></li>
-  </ul>
-</nav> -->
