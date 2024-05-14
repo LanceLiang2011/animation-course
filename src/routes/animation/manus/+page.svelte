@@ -12,6 +12,7 @@
 	import CursorMenu from './cursor-menu.svelte';
 	import TextFadingMenu from './text-fading-menu.svelte';
 	import IconMenu from './icon-menu.svelte';
+	import LineExpandMenu from './line-expand-menu.svelte';
 
 	const links: Link[] = [
 		{
@@ -45,6 +46,7 @@
 	<CursorMenu {links} />
 	<TextFadingMenu {links} />
 	<IconMenu />
+	<LineExpandMenu {links} />
 	<TwoLinesMenu {links} />
 	<BgCornerlineMenu {links} />
 	<SplitBarMenu {links} />
