@@ -11,6 +11,7 @@
 	import SonarLoader from './sonar-loader.svelte';
 	import ColorsLoader from './colors-loader.svelte';
 	import BallSeesaw from './ball-seesaw.svelte';
+	import IrragularBorderLoader from './irragular-border-loader.svelte';
 </script>
 
 <svelte:head>
@@ -40,4 +41,5 @@
 	<SonarLoader />
 	<ColorsLoader />
 	<BallSeesaw />
+	<IrragularBorderLoader />
 </div>
