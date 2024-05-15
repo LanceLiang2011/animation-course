@@ -1,7 +1,6 @@
 <script lang="ts">
-	import type { Action } from 'svelte/action';
 	import Script from '$lib/components/script.svelte';
-	import { gsap } from 'gsap';
+	import { gsap_fromto } from '../gsap-action';
 	import { Switch } from '$lib/components/ui/switch';
 	import { Slider } from '$lib/components/ui/slider/index.js';
 	import anya from '$lib/assets/images/Anya_Forger_Anime.png';
@@ -9,35 +8,19 @@
 	let animate = true;
 	let range = [10];
 
-	interface GsapParams {
-		from: gsap.TweenVars;
-		to: gsap.TweenVars;
-	}
-
-	const gsap_fromto: Action<HTMLElement, GsapParams> = (node, params) => {
-		if (!node) return;
-		let animation = gsap.fromTo(node, params.from, params.to);
-		return {
-			update(newParams) {
-				animation.kill();
-				animation = gsap.fromTo(node, newParams.from, newParams.to);
-			},
-
-			destroy() {
-				animation.kill();
-			}
-		};
-	};
-
 	const code = `
 	const gsap_fromto: 
-	Action<HTMLElement, GsapParams> = (node, params) => {
+	Action<HTMLElement, GsapParams> = 
+	(node, params) => {
 		if (!node) return;
-		let animation = gsap.fromTo(node, params.from, params.to);
+		let target = params.children ? node.children : node;
+		let animation = gsap.fromTo(target, params.from, params.to);
 		return {
 			update(newParams) {
 				animation.kill();
-				animation = gsap.fromTo(node, newParams.from, newParams.to);
+				animation = gsap.fromTo(
+					target, newParams.from, newParams.to
+				);
 			},
 
 			destroy() {
