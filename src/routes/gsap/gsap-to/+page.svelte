@@ -50,6 +50,16 @@
 	`;
 </script>
 
+<h1 class=" mb-8 text-3xl font-semibold">Using GSAP with Svelte Action</h1>
+<p class=" mb-4 text-xl">
+	When using GSAP with Svelte, it's a good idea to wrap the gsap function in a Svelte action. This
+	will make GSAP more declarative.
+</p>
+<p class=" mb-12 text-xl">
+	Don't forget to return the destory and update function. In this way, the animation can be
+	reactive. Change the range and turn on/off animation to see the reactivity.
+</p>
+
 <div class=" grid grid-cols-1 md:grid-cols-3">
 	<div class=" col-span-1">
 		<div>
