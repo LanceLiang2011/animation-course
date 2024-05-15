@@ -22,13 +22,15 @@
 		animation: right 2000ms infinite ease-in-out alternate;
 	}
 	.slash {
-		@apply absolute left-0 top-0 h-full w-full;
+		@apply absolute left-0 top-0 h-full w-full overflow-hidden;
 		transform: rotate(-15deg);
 	}
 	.slash::before {
 		content: '';
 		@apply absolute left-0 top-1/2 h-2 w-full -rotate-12 bg-red-400;
 		animation: slash 4000ms infinite ease-in-out both;
+		background: linear-gradient(90deg, transparent, red, transparent);
+		box-shadow: 0 0 10px red;
 		clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
 	}
 
@@ -39,6 +41,7 @@
 		box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 		filter: blur(4px);
 		animation: slash-trail 4000ms infinite ease-in-out both;
+		clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
 	}
 
 	@keyframes slash {
