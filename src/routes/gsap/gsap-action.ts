@@ -1,13 +1,21 @@
 import type { Action } from 'svelte/action';
 import { gsap } from 'gsap';
 
-interface GsapParams {
+interface GsapFromtoParams {
 	from: gsap.TweenVars;
 	to: gsap.TweenVars;
 	children?: boolean;
 }
 
-export const gsap_fromto: Action<HTMLElement, GsapParams> = (node, params) => {
+interface GsapToParams {
+	params: gsap.TweenVars;
+	options?: {
+		children?: boolean;
+		noupdate?: boolean;
+	};
+}
+
+export const gsap_fromto: Action<HTMLElement, GsapFromtoParams> = (node, params) => {
 	if (!node) return;
 	let target = params.children ? node.children : node;
 	let animation = gsap.fromTo(target, params.from, params.to);
@@ -15,6 +23,24 @@ export const gsap_fromto: Action<HTMLElement, GsapParams> = (node, params) => {
 		update(newParams) {
 			animation.kill();
 			animation = gsap.fromTo(target, newParams.from, newParams.to);
+		},
+
+		destroy() {
+			animation.kill();
+		}
+	};
+};
+
+export const gsap_to: Action<HTMLElement, GsapToParams> = (node, { params, options }) => {
+	if (!node) return;
+	let target = options?.children ? node.children : node;
+	let animation = gsap.to(target, params);
+	return {
+		update({ params: newParams, options }) {
+			if (options?.noupdate) return;
+			animation.kill();
+			target = options?.children ? node.children : node;
+			animation = gsap.to(target, newParams);
 		},
 
 		destroy() {
