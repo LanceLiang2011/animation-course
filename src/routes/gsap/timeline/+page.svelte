@@ -9,7 +9,7 @@
 
 	const code = `
 	export const gsap_timeline: 
-	Action<HTMLElement, GsapTimelineProps> = 
+	Action<HTMLElement, GsapTimelineProps> =
 	(node, { setup }) => {
 	if (!node) return;
 	let tl = gsap.timeline();
