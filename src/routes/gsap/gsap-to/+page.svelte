@@ -3,9 +3,11 @@
 	import Script from '$lib/components/script.svelte';
 	import { gsap } from 'gsap';
 	import { Switch } from '$lib/components/ui/switch';
+	import { Slider } from '$lib/components/ui/slider/index.js';
 	import anya from '$lib/assets/images/Anya_Forger_Anime.png';
 
 	let animate = true;
+	let range = [10];
 
 	interface GsapParams {
 		from: gsap.TweenVars;
@@ -48,10 +50,10 @@
 	<img
 				class=" min-w-36 origin-bottom"
 				use:gsap_fromto={{
-					from: { x: 10, rotate: 10 },
+					from: { x: 10, rotate: range[0] },
 					to: {
 						x: -100,
-						rotate: -10,
+						rotate: -1 * range[0],
 						duration: 2,
 						repeat: -1,
 						yoyo: true,
@@ -71,10 +73,10 @@
 			<img
 				class=" min-w-36 origin-bottom"
 				use:gsap_fromto={{
-					from: { x: 10, rotate: 10 },
+					from: { x: 10, rotate: range[0] },
 					to: {
 						x: -100,
-						rotate: -10,
+						rotate: -1 * range[0],
 						duration: 2,
 						repeat: -1,
 						yoyo: true,
@@ -89,6 +91,16 @@
 		<div class=" pt-12">
 			<span>Animation: {animate ? 'On' : 'Off'}</span>
 			<Switch bind:checked={animate} />
+		</div>
+		<div class=" pt-12">
+			<span>Range: {range} deg</span>
+			<Slider
+				value={range}
+				onValueChange={(newRange) => (range = newRange)}
+				max={90}
+				step={5}
+				class="max-w-[70%]"
+			/>
 		</div>
 	</div>
 	<div class=" col-span-2" use:gsap_fromto={{ from: {}, to: { x: 50, duration: 2 } }}>
