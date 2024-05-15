@@ -13,6 +13,7 @@
 	import BallSeesaw from './ball-seesaw.svelte';
 	import IrragularBorderLoader from './irragular-border-loader.svelte';
 	import SplitTextLoader from './split-text-loader.svelte';
+	import GoujoLoader from './goujo-loader.svelte';
 </script>
 
 <svelte:head>
@@ -30,6 +31,7 @@
 </p>
 
 <div class="flex flex-wrap items-center justify-center gap-16">
+	<GoujoLoader />
 	<RotateLoader />
 	<Heart />
 	<BouncingBalls />
