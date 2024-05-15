@@ -17,6 +17,7 @@ interface GsapToParams {
 
 interface GsapTimelineProps {
 	setup: (tl: gsap.core.Timeline, node: HTMLElement) => void;
+	delay?: number;
 }
 
 export const gsap_fromto: Action<HTMLElement, GsapFromtoParams> = (node, params) => {
@@ -53,9 +54,9 @@ export const gsap_to: Action<HTMLElement, GsapToParams> = (node, { params, optio
 	};
 };
 
-export const gsap_timeline: Action<HTMLElement, GsapTimelineProps> = (node, { setup }) => {
+export const gsap_timeline: Action<HTMLElement, GsapTimelineProps> = (node, { setup, delay }) => {
 	if (!node) return;
-	let tl = gsap.timeline();
+	let tl = gsap.timeline({ delay });
 	setup(tl, node);
 
 	return {

@@ -11,19 +11,19 @@
 	export const gsap_timeline: 
 	Action<HTMLElement, GsapTimelineProps> =
 	(node, { setup }) => {
-	if (!node) return;
-	let tl = gsap.timeline();
-	setup(tl, node);
+		if (!node) return;
+		let tl = gsap.timeline({ delay });
+		setup(tl, node);
 
-	return {
-		destroy() {
-			tl.kill();
-		},
-		update(newParams) {
-			tl.clear();
-			setup(tl, node);
-		}
-	};
+		return {
+			destroy() {
+				tl.kill();
+			},
+			update(newParams) {
+				tl.clear();
+				setup(tl, node);
+			}
+		};
 };
 
 	//...
@@ -38,7 +38,8 @@
 					.to(frieren_img, { x: 300, duration: 1.5 }, '-=1.2')
 					.to(anya_img, { x: -600, duration: 1.5 })
 					.to(frieren_img, { x: 800, duration: 1.5 }, '<');
-			}
+			},
+			delay: 2
 		}}
 	>
 		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
@@ -73,7 +74,8 @@
 					.to(frieren_img, { x: 300, duration: 1.5 }, '-=1.2')
 					.to(anya_img, { x: -600, duration: 1.5 })
 					.to(frieren_img, { x: 800, duration: 1.5 }, '<');
-			}
+			},
+			delay: 2
 		}}
 	>
 		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
