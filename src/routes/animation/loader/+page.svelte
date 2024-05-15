@@ -31,7 +31,7 @@
 </p>
 
 <div class="flex flex-wrap items-center justify-center gap-16">
-	<GoujoLoader />
+	<!-- <GoujoLoader /> -->
 	<RotateLoader />
 	<Heart />
 	<BouncingBalls />
