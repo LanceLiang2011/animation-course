@@ -12,7 +12,7 @@
 	Action<HTMLElement, GsapTimelineProps> =
 	(node, { setup }) => {
 		if (!node) return;
-		let tl = gsap.timeline({ delay });
+		let tl = gsap.timeline(options);
 		setup(tl, node);
 
 		return {
@@ -24,7 +24,7 @@
 				setup(tl, node);
 			}
 		};
-};
+	};
 
 	//...
 	<div
@@ -34,12 +34,12 @@
 			setup(tl, node) {
 				tl.from(anya_img, { y: 200, autoAlpha: 0 })
 					.from(frieren_img, { y: 200, autoAlpha: 0 })
-					.to(anya_img, { x: -300, duration: 1.5 })
-					.to(frieren_img, { x: 300, duration: 1.5 }, '-=1.2')
-					.to(anya_img, { x: -600, duration: 1.5 })
-					.to(frieren_img, { x: 800, duration: 1.5 }, '<');
+					.to(anya_img, { x: -300 })
+					.to(frieren_img, { x: 300 }, '-=1.2')
+					.to(anya_img, { x: -600 })
+					.to(frieren_img, { x: 800 }, '<');
 			},
-			delay: 2
+			options: { delay: 1, repeat: -1, defaults: { duration: 1.5 } }
 		}}
 	>
 		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
@@ -70,12 +70,12 @@
 			setup(tl, node) {
 				tl.from(anya_img, { y: 200, autoAlpha: 0 })
 					.from(frieren_img, { y: 200, autoAlpha: 0 })
-					.to(anya_img, { x: -300, duration: 1.5 })
-					.to(frieren_img, { x: 300, duration: 1.5 }, '-=1.2')
-					.to(anya_img, { x: -600, duration: 1.5 })
-					.to(frieren_img, { x: 800, duration: 1.5 }, '<');
+					.to(anya_img, { x: -300 })
+					.to(frieren_img, { x: 300 }, '-=1.2')
+					.to(anya_img, { x: -600 })
+					.to(frieren_img, { x: 800 }, '<');
 			},
-			delay: 2
+			options: { delay: 1, repeat: -1, defaults: { duration: 1.5 } }
 		}}
 	>
 		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
