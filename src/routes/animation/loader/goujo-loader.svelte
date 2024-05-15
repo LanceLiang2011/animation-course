@@ -3,7 +3,7 @@
 </script>
 
 <div class="relative h-96 w-64">
-	<span class="slash rounded-lg"></span>
+	<span class="slash"></span>
 	<div class="goujo absolute left-0 top-0 h-full w-full">
 		<img class="w-64" src={goujo} alt="goujo" />
 	</div>
@@ -21,19 +21,15 @@
 		clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0 100%);
 		animation: right 2000ms infinite ease-in-out alternate;
 	}
-
 	.slash {
 		@apply absolute left-0 top-0 h-full w-full;
 		transform: rotate(-15deg);
-		overflow: hidden;
 	}
-
 	.slash::before {
 		content: '';
 		@apply absolute left-0 top-1/2 h-2 w-full -rotate-12 bg-red-400;
-		background: linear-gradient(90deg, transparent, red, transparent);
-		box-shadow: 0 0 10px red;
 		animation: slash 4000ms infinite ease-in-out both;
+		clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
 	}
 
 	.slash::after {
