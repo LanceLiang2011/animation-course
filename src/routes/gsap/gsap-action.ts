@@ -15,6 +15,10 @@ interface GsapToParams {
 	};
 }
 
+interface GsapTimelineProps {
+	setup: (tl: gsap.core.Timeline, node: HTMLElement) => void;
+}
+
 export const gsap_fromto: Action<HTMLElement, GsapFromtoParams> = (node, params) => {
 	if (!node) return;
 	let target = params.children ? node.children : node;
@@ -45,6 +49,22 @@ export const gsap_to: Action<HTMLElement, GsapToParams> = (node, { params, optio
 
 		destroy() {
 			animation.kill();
+		}
+	};
+};
+
+export const gsap_timeline: Action<HTMLElement, GsapTimelineProps> = (node, { setup }) => {
+	if (!node) return;
+	let tl = gsap.timeline();
+	setup(tl, node);
+
+	return {
+		destroy() {
+			tl.kill();
+		},
+		update(newParams) {
+			tl.clear();
+			setup(tl, node);
 		}
 	};
 };
