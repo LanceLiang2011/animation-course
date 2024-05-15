@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { codeToHtml } from 'shiki';
+	import { Skeleton } from '$lib/components/ui/skeleton';
 	export let code: string;
 	export let lang: string = 'javascript';
 	let htmlPromise = codeToHtml(code, {
@@ -10,7 +11,7 @@
 
 <div>
 	{#await htmlPromise}
-		loading...
+		<Skeleton class="h-[32rem] w-4/5" />
 	{:then html}
 		{@html html}
 	{/await}
