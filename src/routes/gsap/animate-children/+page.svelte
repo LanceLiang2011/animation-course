@@ -30,9 +30,9 @@
 	<div
 	class=" flex"
 	use:gsap_fromto={{
-		from: { rotate: -30 },
+		from: { rotate: 'random(-60, -10)' },
 		to: {
-			rotate: 30,
+			rotate: 'random(10,60)',
 			duration: 2,
 			repeat: -1,
 			yoyo: true,
@@ -45,9 +45,9 @@
 		children: true
 	}}
 >
-	<img src={anya} alt="Anya" class="h-80 w-80 object-contain" />
-	<img src={frieren} alt="Frieren" class="h-80 w-80 object-contain" />
-	<img src={goujo} alt="Frieren" class="h-80 w-80 object-contain" />
+	<img .../>
+	<img ... />
+	<img ... />
 </div>
 	`;
 </script>
@@ -63,9 +63,9 @@
 <div
 	class=" flex"
 	use:gsap_fromto={{
-		from: { rotate: -30 },
+		from: { rotate: 'random(-60, -10)' },
 		to: {
-			rotate: 30,
+			rotate: 'random(10,60)',
 			duration: 2,
 			repeat: -1,
 			yoyo: true,
