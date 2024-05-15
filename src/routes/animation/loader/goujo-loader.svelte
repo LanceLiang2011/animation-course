@@ -22,7 +22,7 @@
 		animation: right 2000ms infinite ease-in-out alternate;
 	}
 	.slash {
-		@apply absolute left-0 top-0 h-full w-full overflow-hidden;
+		@apply absolute left-0 top-0 z-10 h-full w-full overflow-hidden;
 		transform: rotate(-15deg);
 	}
 	.slash::before {
