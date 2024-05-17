@@ -23,7 +23,7 @@
 				1
 			);
 		},
-		options: { repeat: -1, repeatDelay: -1.1 },
+		options: { repeat: -1, repeatDelay: 0.2 },
 		children: true
 	}}
 	class="relative mx-auto h-96 w-96"
@@ -53,7 +53,7 @@
 				1
 			);
 		},
-		options: { repeat: -1, repeatDelay: -1.1 },
+		options: { repeat: -1, repeatDelay: 0.2 },
 		children: true
 	}}
 	class="relative mx-auto h-96 w-96"
