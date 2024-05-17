@@ -11,11 +11,10 @@
 	use:gsap_timeline={{
 		setup: (tl, target) => {
 			tl.from(target, 
-            { y: 100, autoAlpha: 0, duration: 1, stagger: 1 })
+            { autoAlpha: 0, duration: 1, stagger: 1 })
             .to(
 				target,
 				{
-					y: -100,
 					autoAlpha: 0,
 					duration: 1,
 					stagger: 1
@@ -23,7 +22,7 @@
 				1
 			);
 		},
-		options: { repeat: -1, repeatDelay: 0.2 },
+		options: { repeat: -1, repeatDelay: -1 },
 		children: true
 	}}
 	class="relative mx-auto h-96 w-96"
@@ -42,10 +41,9 @@
 <section
 	use:gsap_timeline={{
 		setup: (tl, target) => {
-			tl.from(target, { y: 100, autoAlpha: 0, duration: 1, stagger: 1 }).to(
+			tl.from(target, { autoAlpha: 0, duration: 1, stagger: 1 }).to(
 				target,
 				{
-					y: -100,
 					autoAlpha: 0,
 					duration: 1,
 					stagger: 1
@@ -53,7 +51,7 @@
 				1
 			);
 		},
-		options: { repeat: -1, repeatDelay: 0.2 },
+		options: { repeat: -1, repeatDelay: -1 },
 		children: true
 	}}
 	class="relative mx-auto h-96 w-96"
