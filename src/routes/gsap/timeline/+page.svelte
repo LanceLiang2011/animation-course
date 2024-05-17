@@ -9,22 +9,27 @@
 
 	const code = `
 	export const gsap_timeline: 
-	Action<HTMLElement, GsapTimelineProps> =
-	(node, { setup }) => {
-		if (!node) return;
-		let tl = gsap.timeline(options);
-		setup(tl, node);
+	Action<HTMLElement, GsapTimelineProps> = (
+	node,
+	{ setup, options, children }
+) => {
+	if (!node) return;
+	let target = children ? node.children : node;
 
-		return {
-			destroy() {
-				tl.kill();
-			},
-			update(newParams) {
-				tl.clear();
-				setup(tl, node);
-			}
-		};
+	let tl = gsap.timeline(options);
+	setup(tl, target);
+
+	return {
+		destroy() {
+			tl.kill();
+		},
+		update(newPotions) {
+			tl.kill();
+			tl = gsap.timeline(newPotions);
+			setup(tl, target);
+		}
 	};
+};
 
 	//...
 	<div

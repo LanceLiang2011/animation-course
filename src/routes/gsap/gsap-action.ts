@@ -16,8 +16,9 @@ interface GsapToParams {
 }
 
 interface GsapTimelineProps {
-	setup: (tl: gsap.core.Timeline, node: HTMLElement) => void;
+	setup: (tl: gsap.core.Timeline, node: Node | HTMLCollection) => void;
 	options?: gsap.TimelineVars;
+	children?: boolean;
 }
 
 export const gsap_fromto: Action<HTMLElement, GsapFromtoParams> = (node, params) => {
@@ -54,18 +55,24 @@ export const gsap_to: Action<HTMLElement, GsapToParams> = (node, { params, optio
 	};
 };
 
-export const gsap_timeline: Action<HTMLElement, GsapTimelineProps> = (node, { setup, options }) => {
+export const gsap_timeline: Action<HTMLElement, GsapTimelineProps> = (
+	node,
+	{ setup, options, children }
+) => {
 	if (!node) return;
+	let target = children ? node.children : node;
+
 	let tl = gsap.timeline(options);
-	setup(tl, node);
+	setup(tl, target);
 
 	return {
 		destroy() {
 			tl.kill();
 		},
-		update(newParams) {
-			tl.clear();
-			setup(tl, node);
+		update(newPotions) {
+			tl.kill();
+			tl = gsap.timeline(newPotions);
+			setup(tl, target);
 		}
 	};
 };
