@@ -1,56 +1,39 @@
 <script lang="ts">
+	import anyaCrying from '$lib/assets/images/anya-crying.png';
+	import anyaDisgusted from '$lib/assets/images/anya-disgusted.png';
+	import anyaShocked from '$lib/assets/images/anya-shocked.png';
+	import anyaSmuh from '$lib/assets/images/anya-smuh.png';
 	import { gsap_timeline } from '../gsap-action';
-	import anya from '$lib/assets/images/Anya_Forger_Anime.png';
-	import frieren from '$lib/assets/images/frieren-figure.png';
 	import Script from '$lib/components/script.svelte';
 
-	let anya_img: HTMLElement;
-	let frieren_img: HTMLElement;
-
 	const code = `
-	export const gsap_timeline: 
-	Action<HTMLElement, GsapTimelineProps> = (
-	node,
-	{ setup, options, children }
-) => {
-	if (!node) return;
-	let target = children ? node.children : node;
-
-	let tl = gsap.timeline(options);
-	setup(tl, target);
-
-	return {
-		destroy() {
-			tl.kill();
+    <section
+	use:gsap_timeline={{
+		setup: (tl, target) => {
+			tl.from(target, 
+            { autoAlpha: 0, duration: 1, stagger: 1 })
+            .to(
+				target,
+				{
+					autoAlpha: 0,
+					duration: 1,
+					stagger: 1
+				},
+				1
+			);
 		},
-		update(newPotions) {
-			tl.kill();
-			tl = gsap.timeline(newPotions);
-			setup(tl, target);
-		}
-	};
-};
-
-	//...
-	<div
-		class=" flex origin-bottom 
-		items-center justify-center overflow-hidden"
-		use:gsap_timeline={{
-			setup(tl, node) {
-				tl.from(anya_img, { y: 200, autoAlpha: 0 })
-					.from(frieren_img, { y: 200, autoAlpha: 0 })
-					.to(anya_img, { x: -300 })
-					.to(frieren_img, { x: 300 }, '-=1.2')
-					.to(anya_img, { x: -600 })
-					.to(frieren_img, { x: 800 }, '<');
-			},
-			options: { delay: 1, repeat: -1, defaults: { duration: 1.5 } }
-		}}
-	>
-		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
-		<img bind:this={frieren_img} src={frieren} alt="Anya" class="" />
-	</div>
-	`;
+		options: { repeat: -1, repeatDelay: -1 },
+		children: true
+	}}
+	class="relative mx-auto h-96 w-96"
+>
+	<img .../>
+	<img ... />
+	<img .../>
+	<img ... />
+</section>
+    
+    `;
 </script>
 
 <h1 class=" mb-8 text-3xl font-semibold">GSAP Timeline</h1>
@@ -68,25 +51,30 @@
 </p>
 <p class=" mb-12 text-xl">Here I use the setup function example.</p>
 
+<section
+	use:gsap_timeline={{
+		setup: (tl, target) => {
+			tl.from(target, { autoAlpha: 0, duration: 1, stagger: 1 }).to(
+				target,
+				{
+					autoAlpha: 0,
+					duration: 1,
+					stagger: 1
+				},
+				1
+			);
+		},
+		options: { repeat: -1, repeatDelay: -1 },
+		children: true
+	}}
+	class="relative mx-auto h-96 w-96"
+>
+	<img class="img absolute h-96 w-96 object-contain" src={anyaCrying} alt="Anya Crying" />
+	<img class="img absolute h-96 w-96 object-contain" src={anyaDisgusted} alt="Anya Disgusted" />
+	<img class="img absolute h-96 w-96 object-contain" src={anyaShocked} alt="Anya shocked" />
+	<img class="img absolute h-96 w-96 object-contain" src={anyaSmuh} alt="Anya smuh" />
+</section>
+
 <div class="">
-	<div
-		class=" flex origin-bottom items-center justify-center overflow-hidden"
-		use:gsap_timeline={{
-			setup(tl, node) {
-				tl.from(anya_img, { y: 200, autoAlpha: 0 })
-					.from(frieren_img, { y: 200, autoAlpha: 0 })
-					.to(anya_img, { x: -300 })
-					.to(frieren_img, { x: 300 }, '-=1.2')
-					.to(anya_img, { x: -600 })
-					.to(frieren_img, { x: 800 }, '<');
-			},
-			options: { delay: 1, repeat: -1, defaults: { duration: 1.5 } }
-		}}
-	>
-		<img bind:this={anya_img} src={anya} alt="Anya" class="" />
-		<img bind:this={frieren_img} src={frieren} alt="Anya" class="" />
-	</div>
-	<div class="">
-		<Script {code} />
-	</div>
+	<Script {code} />
 </div>
