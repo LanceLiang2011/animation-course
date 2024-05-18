@@ -1,5 +1,6 @@
 import type { Action } from 'svelte/action';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 interface GsapFromtoParams {
 	from: gsap.TweenVars;
