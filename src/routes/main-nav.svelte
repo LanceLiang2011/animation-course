@@ -23,7 +23,7 @@
 			<Menubar.Separator />
 			<a href="/gsap"><Menubar.Item>GSAP Animation</Menubar.Item></a>
 			<Menubar.Separator />
-			<a href="https://animation-course-motion.vercel.app/" aria-disabled="true"
+			<a href="https://animation-course-motion.vercel.app/motion" aria-disabled="true"
 				><Menubar.Item>Framer Motion Animation</Menubar.Item></a
 			>
 		</Menubar.Content>
