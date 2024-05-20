@@ -6,8 +6,8 @@
 	export let data: PageData;
 </script>
 
-<div class="container">
-	<nav>
+<div class="grid grid-cols-1 md:grid-cols-4">
+	<nav class="col-span-1">
 		<ScrollArea class="w-36 rounded-md border">
 			<div class="p-4">
 				<h4 class="mb-4 text-center text-sm font-medium leading-none">GSAP</h4>
@@ -21,14 +21,10 @@
 			</div>
 		</ScrollArea>
 	</nav>
-	<main><slot /></main>
+	<main class="col-span-3"><slot /></main>
 </div>
 
 <style>
-	.container {
-		display: grid;
-		grid-template-columns: 200px 1fr;
-	}
 	nav {
 		padding-top: 32px;
 	}
